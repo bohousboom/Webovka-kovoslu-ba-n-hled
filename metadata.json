@@ -1,0 +1,6 @@
+{
+  "name": "A.V. Kovoslužba s.r.o. | Servis a prodej elektroniky Praha",
+  "description": "Autorizovaný servis televizorů, počítačů, anténních a satelitních systémů a prodej domácí elektroniky v Praze 4.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
