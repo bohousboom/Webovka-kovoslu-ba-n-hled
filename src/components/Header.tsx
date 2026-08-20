@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, MapPin, Clock, Menu, X, Wrench } from 'lucide-react';
 import { COMPANY_INFO } from '../data/mockData';
+import { CompanyLogo } from './CompanyLogo';
 
 interface HeaderProps {
   onOpenOrderModal?: () => void;
@@ -59,9 +60,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenOrderModal }) => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-10 h-10 rounded-lg bg-blue-900 text-amber-400 flex items-center justify-center font-black text-xl shadow-xs border border-blue-950">
-            KV
-          </div>
+          <CompanyLogo className="w-10 h-10 rounded-xl shadow-xs group-hover:scale-105 transition-transform" />
           <div>
             <div className="font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight leading-none group-hover:text-blue-900 transition-colors">
               A.V. KOVOSLUŽBA

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO } from '../data/mockData';
 import { Phone, Mail, MapPin, Clock, Bus, Car, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { CompanyLogo } from './CompanyLogo';
 import { RepairFormData } from '../types';
 
 interface ContactSectionProps {
@@ -68,9 +69,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOrderSuccess }
             {/* Main Contact Card */}
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-xs space-y-4">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <h3 className="text-base font-bold text-slate-900">
-                  A.V. Kovoslužba s.r.o.
-                </h3>
+                <div className="flex items-center gap-2.5">
+                  <CompanyLogo className="w-7 h-7 rounded-lg shadow-2xs" />
+                  <h3 className="text-base font-bold text-slate-900">
+                    A.V. Kovoslužba s.r.o.
+                  </h3>
+                </div>
                 <span className="text-[11px] font-bold text-blue-900 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
                   Provozovna od r. 1995
                 </span>

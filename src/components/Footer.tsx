@@ -1,6 +1,7 @@
 import React from 'react';
 import { COMPANY_INFO } from '../data/mockData';
 import { MapPin, Phone, Mail, Clock, ArrowUp } from 'lucide-react';
+import { CompanyLogo } from './CompanyLogo';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -24,10 +25,8 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: About company */}
           <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-blue-900 text-amber-400 font-black text-sm flex items-center justify-center border border-blue-950">
-                KV
-              </div>
+            <div className="flex items-center gap-2.5">
+              <CompanyLogo className="w-8 h-8 rounded-lg shadow-xs" />
               <span className="text-white font-extrabold text-sm tracking-tight">
                 A.V. KOVOSLUŽBA s.r.o.
               </span>
